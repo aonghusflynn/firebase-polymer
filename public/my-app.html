@@ -1,0 +1,22 @@
+<link rel="import" href="bower_components/polymerfire/firebase-app.html" />
+<link rel="import" href="my-login.html" />
+
+<dom-module id="my-app">
+    <template>
+
+        <firebase-app
+auth-domain="btf-stage.firebaseapp.com"
+database-url="https://btf-stage.firebaseio.com"
+api-key="AIzaSyAa6bfOZam5mgzkdPNl0kty_xhZXu6svLk"
+storage-bucket="btf-stage.appspot.com"
+messaging-sender-id="51959758995">
+</firebase-app>
+
+    <my-login></my-login>
+    </template>
+<script>
+    Polymer({
+        is: 'my-app',
+    });
+</script>
+</dom-module>
